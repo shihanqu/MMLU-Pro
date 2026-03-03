@@ -1,0 +1,34 @@
+subject,accuracy,correct,wrong
+biology,0.9024,647,70
+business,0.8657,683,106
+chemistry,0.8763,992,140
+computer science,0.8537,350,60
+economics,0.8389,708,136
+engineering,0.7038,682,287
+health,0.7836,641,177
+history,0.6719,256,125
+law,0.5568,613,488
+math,0.9349,1263,88
+other,0.7489,692,232
+philosophy,0.7014,350,149
+physics,0.8676,1127,172
+psychology,0.7820,624,174
+total,0.8002,9628,2404
+
+# Comparison Data: Repository compute_accuracy.py (Level 2)
+subject,accuracy,method
+biology,0.9038,repo_script_l2
+business,0.8669,repo_script_l2
+chemistry,0.8790,repo_script_l2
+computer science,0.8537,repo_script_l2
+economics,0.8389,repo_script_l2
+engineering,0.7069,repo_script_l2
+health,0.7836,repo_script_l2
+history,0.6719,repo_script_l2
+law,0.5577,repo_script_l2
+math,0.9356,repo_script_l2
+other,0.7489,repo_script_l2
+philosophy,0.7014,repo_script_l2
+physics,0.8691,repo_script_l2
+psychology,0.7820,repo_script_l2
+total,0.8012,repo_script_l2

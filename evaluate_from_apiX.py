@@ -1,8 +1,8 @@
 import os
 import openai
 from openai import OpenAI
-import anthropic
-import google.generativeai as genai
+# import anthropic
+# import google.generativeai as genai
 import json
 import re
 import random
@@ -11,9 +11,9 @@ import time
 from datasets import load_dataset
 import argparse
 import requests
-from ai21 import AI21Client
-from ai21.models.chat import ChatMessage, ResponseFormat, DocumentSchema, FunctionToolDefinition
-from ai21.models.chat import ToolDefinition, ToolParameters
+# from ai21 import AI21Client
+# from ai21.models.chat import ChatMessage, ResponseFormat, DocumentSchema, FunctionToolDefinition
+# from ai21.models.chat import ToolDefinition, ToolParameters
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
@@ -34,7 +34,7 @@ def call_api(client, instruction, inputs):
       model=args.model_name,
       messages=message_text,
       temperature=0,
-      max_tokens=32768,
+      max_tokens=2048,
       top_p=0.95,
       frequency_penalty=0,
       presence_penalty=0,
@@ -259,7 +259,7 @@ if __name__ == "__main__":
     parser.add_argument("--model_name", "-m", type=str, default="local")
     parser.add_argument("--assigned_subjects", "-a", type=str, default="all")
     parser.add_argument("--url", "-u", type=str, default="http://127.0.0.1:8080/")
-    parser.add_argument("--num_workers", "-n", type=int, default=4,
+    parser.add_argument("--num_workers", "-n", type=int, default=48,
                        help="Number of concurrent queries")
     assigned_subjects = []
     args = parser.parse_args()
